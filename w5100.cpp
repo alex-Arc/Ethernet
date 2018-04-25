@@ -16,6 +16,14 @@
 #endif
 #endif
 
+#ifndef SPI_CLOCK_30MHz
+  #error "30MHz SPI Clock not defined"
+#endif
+
+#if MAX_SOCK_NUM > 1
+  #error "MAX_SOCK_NUM has to be 1"
+#endif
+
 //#define W5500_4K_BUFFERS
 //#define W5200_2K_BUFFERS
 //#define W5200_4K_BUFFERS
